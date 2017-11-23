@@ -83,7 +83,8 @@ tools:context="com.malvansamudra.CustomerFeedbackActivity">
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
                 android:elevation="10dp">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -94,21 +95,32 @@ tools:context="com.malvansamudra.CustomerFeedbackActivity">
                         android:layout_height="wrap_content"
                         android:text="FOOD TASTE"
                         android:textStyle="bold"/>
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioGroupFoodTaste"
+                        android:orientation="horizontal"
+                        android:checkedButton="1"
+                        >
                     <android.support.v7.widget.AppCompatCheckBox
-                        android:id="@+id/FoodTasteAverage"
+                        android:id="@+id/ckFoodTasteAverage"
                         android:text="Average"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:onClick="onFoodTasteCheckboxClicked"/>
                     <android.support.v7.widget.AppCompatCheckBox
-                        android:id="@+id/FoodTasteGood"
+                        android:id="@+id/ckFoodTasteGood"
                         android:text="Good"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:onClick="onFoodTasteCheckboxClicked"/>
                     <android.support.v7.widget.AppCompatCheckBox
-                        android:id="@+id/FoodTasteExcellent"
+                        android:id="@+id/ckFoodTasteExcellent"
                         android:text="Excellent"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:onClick="onFoodTasteCheckboxClicked"/>
+                    </RadioGroup>
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -117,7 +129,8 @@ tools:context="com.malvansamudra.CustomerFeedbackActivity">
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
                 android:elevation="10dp">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -129,21 +142,31 @@ tools:context="com.malvansamudra.CustomerFeedbackActivity">
                         android:text="SERVICE"
                         android:textStyle="bold"
                         android:layout_marginRight="25dp"/>
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioGroupService"
+                        android:orientation="horizontal"
+                        android:checkedButton="1">
                     <android.support.v7.widget.AppCompatCheckBox
-                        android:id="@+id/ServiceAverage"
+                        android:id="@+id/ckServiceAverage"
                         android:text="Average"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:onClick="onServiceCheckboxClicked"/>
                     <android.support.v7.widget.AppCompatCheckBox
-                        android:id="@+id/ServiceGood"
+                        android:id="@+id/ckServiceGood"
                         android:text="Good"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:onClick="onServiceCheckboxClicked"/>
                     <android.support.v7.widget.AppCompatCheckBox
-                        android:id="@+id/ServiceExcellent"
+                        android:id="@+id/ckServiceExcellent"
                         android:text="Excellent"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:onClick="onServiceCheckboxClicked"/>
+                    </RadioGroup>
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -152,8 +175,8 @@ tools:context="com.malvansamudra.CustomerFeedbackActivity">
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
                 android:elevation="10dp">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -165,21 +188,31 @@ tools:context="com.malvansamudra.CustomerFeedbackActivity">
                         android:text="AMBIENCE"
                         android:textStyle="bold"
                         android:layout_marginRight="15dp"/>
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioGroupAmbience"
+                        android:orientation="horizontal"
+                        android:checkedButton="1">
                     <android.support.v7.widget.AppCompatCheckBox
-                        android:id="@+id/AmbienceAverage"
+                        android:id="@+id/ckAmbienceAverage"
                         android:text="Average"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:onClick="onAmbienceCheckboxClicked"/>
                     <android.support.v7.widget.AppCompatCheckBox
-                        android:id="@+id/AmbienceGood"
+                        android:id="@+id/ckAmbienceGood"
                         android:text="Good"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:onClick="onAmbienceCheckboxClicked"/>
                     <android.support.v7.widget.AppCompatCheckBox
-                        android:id="@+id/AmbienceExcellent"
+                        android:id="@+id/ckAmbienceExcellent"
                         android:text="Excellent"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:onClick="onAmbienceCheckboxClicked"/>
+                    </RadioGroup>
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
