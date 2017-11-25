@@ -37,7 +37,7 @@ tools:context="com.malvansamudra.CustomerFeedbackActivity">
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"/>
             <AutoCompleteTextView
-                android:id="@+id/actvCompanyName"
+                android:id="@+id/actvCustomerMobileNo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Mobile #"
@@ -47,7 +47,7 @@ tools:context="com.malvansamudra.CustomerFeedbackActivity">
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"/>
             <AutoCompleteTextView
-                android:id="@+id/actvAddddress"
+                android:id="@+id/actvCustomerAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Address"
