@@ -74,7 +74,7 @@ public class CustomerFeedbackActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<Void> task) {
                 if (task.isSuccessful()){
                     progressBarAddFeedback.dismiss();
-                    Toast.makeText(getApplication(),"Thank You for your feedback!! ",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplication(),"Thank You for your feedback!! We appreciate you taking the time to help us improve !! ",Toast.LENGTH_LONG).show();
                     //sendNotification();
                     resetUiComponents();
 
